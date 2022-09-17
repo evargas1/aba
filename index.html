@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aba</title>
+    <link rel="stylesheet" href="./dist/css/style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./functions.js"></script>
+</head>
+<body>
+    <header aria-label="main navigation options">
+        <nav>
+            <a href="#"><img src="./dist/css/images/Aba-Logo.png" alt="aba logo"></a>
+            <ul>
+                <li><a href="#">Reserve</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Group Dining</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+            <span class="nav-butt" onclick="addClass()" id="menu-butt">
+                <div></div>
+                <div></div>
+                <div></div>
+            </span>
+            <div id="myNav" class="overlay-menu">
+                <button onclick="removeClass()" id="close" href="#" class="closebtn" >&#x2715;</button>
+                <div class="overlay-content">
+                  <a href="#">Reserve</a>
+                  <a href="#">Menu</a>
+                  <a href="#">Group Dining</a>
+                  <a href="#">Events</a>
+                  <a href="#">Team</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner" aria-label="banner section with two food images being featured">
+        <div class="banner-img-small banner-imgs">
+            <img src="./dist/css/images/up-47.jpg" alt="egg rolls and a small vegatable pizza">
+        </div>
+        <div class="banner-img-large banner-imgs">
+            <img src="./dist/css/images/Aba_VillageSalad.jpg" alt="featured aba salad">
+        </div>
+    </section>
+
+    <section id="reserveTable" class="reserve" aria-label="book a reservation">
+        <h2>Make a reservation</h2>
+        <form id="schedule">
+            <input type="date" aria-label="Choose a Date" id="date" name="date" value="" required><br>
+            <input aria-label="Choose a time" type="time" id="time" min="10:00" max="23:00" name="time" value="20:30" required><br>
+            <input aria-label="Amount of guest" type="number" id="guest" placeholder=" 6 People" name="guest" required><br>
+            <input id="schedule-submit" class="submit-butt" type="submit" value="Find a Table" >
+        </form>  
+        <form id="personal-info">
+            <input aria-label="Enter your name" type="text" id="fname" name="ftime" placeholder="Name" required><br>
+            <input type="text" aria-label="Enter phone number" id="phone" name="phone" placeholder="(312)789-5643" required><br>
+            <input aria-label="Enter your email" type="text" id="email" placeholder="Email" name="email" required><br>
+            <input id="personal-submit" class="submit-butt" type="submit" value="Submit">
+        </form>
+        <h5 id="success-message">You Have Successfully Made a Reservation!</h5>
+    </section>
+    
+    <section aria-label="learn more about Aba's group dining and wine dinner">
+        <div class="card reserve">
+            <div class="info">
+                <h3>Group Dining at Aba</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis architecto corrupti inventore dicta illum suscipit nesciunt quos sunt, quis soluta minus commodi earum voluptates, ab ipsam quam voluptas, dolorum amet possimus reiciendis laborum. Praesentium tenetur sed error quidem, voluptas nisi aut impedit temporibus, ipsam suscipit explicabo, quas reiciendis quo.</p>
+                <a class="butt-party" href="#">Plan your party</a>
+            </div>
+            <div class="info-img">
+                <img src="./dist/css/images/up-35.jpg" alt="featured aba vegatable pizza">
+            </div>
+        </div>
+        <div class="card reserve">
+            <div class="info-img">
+                <div class="left-info-img">
+                    <img src="./dist/css/images/up-35.jpg" alt="featured aba vegatable pizza closeup">
+                </div>
+                
+            </div>
+            <div class="info">
+                <h3>Wine dinner</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore repudiandae ratione, autem aut delectus optio dolores nam exercitationem consequatur eligendi tempora maiores fugit quibusdam aliquid ut. Omnis cupiditate necessitatibus aliquid.
+                </p>
+                <span>June 13th, 2018 at 7pm</span>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="card reserve">
+            <div class="info">
+                <h3>About Aba</h3>
+                <p>Aba is a restaurant with a rooftop patio located in Chicago's historic Fulton Market District. This is Chef CJ Jacobson's second restaurant with Lettuce Entertain You, and is an extension of Ema (mother in Hebrew) in River North. Aba, meaning father in Hebrew, will incorporate Ema's style of cooking with a large influence of steak, raw, and chilled seafood. The beverage program is crafted by Wine Director Ryan Arnold and Mixelogist Liz Pearce and showcases Mediterranean inspired rare wines and spirits.</p>
+                <span></span>
+            </div>
+            <div class="info-img">
+                <img src="./dist/css/images/up-42.jpg" alt="egg rolls on ice">
+            </div>
+        </div>
+    </section>
+
+    <footer aria-label="footer with jumping links">
+        <img src="./dist/css/images/Aba-wood-1.jpg" alt=""> 
+        <div class="location-info">
+            <div class="empty"></div>
+            <div class="small-box">
+                <h4>Hours</h4>
+                <p>Tues - Thurs 12pm - 10pm</p>
+                <p>Fri 12pm - 1am</p>
+                <p>Sat 10am - 1am</p>
+                <p>Sun 10am - 9pm</p>
+                <a href="#">Contact</a>
+                <a href="#">Newsletter</a>
+            </div>
+
+            <div class="small-box">
+                <h4>Locations</h4>
+                <p>302 N Green Street, 3rd Floor <br/> Chicago, IL 60607</p>
+                <p>773-645-1400</p>
+            </div>
+        </div>
+        <ul class="footer-links">
+            <li><a href="#">frequent diner</a></li>
+            <li><a href="#">gift cards</a></li>
+            <li><a href="#">employment</a></li>
+            <li><a href="#">leye.com</a></li>
+            <li><a href="#">terms of use</a></li>
+            <li><a href="#">privacy policy</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
