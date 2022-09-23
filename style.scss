@@ -235,6 +235,9 @@ header{
             border-radius: unset;
             border-width: 0.1rem 0.05rem 0.1rem 0.1rem;
             margin-top: 1rem;
+            &.error{
+                border: 2px solid red;
+            }
             @media screen and (max-width: 500px){
                 border-width: .1rem;
                 width: 100%;
@@ -480,5 +483,8 @@ footer{
     }
 }
 
+#error-box{
+    display: none;
+}
 
 

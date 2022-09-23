@@ -325,6 +325,10 @@ header nav .open {
   margin-top: 1rem;
 }
 
+.reserve form input.error {
+  border: 2px solid red;
+}
+
 @media screen and (max-width: 500px) {
   .reserve form input {
     border-width: .1rem;
@@ -645,5 +649,9 @@ footer .footer-links li a:focus {
 
 footer .footer-links li a:hover {
   color: #b9b5b5;
+}
+
+#error-box {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

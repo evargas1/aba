@@ -50,6 +50,9 @@
 
     <section id="reserveTable" class="reserve" aria-label="book a reservation">
         <h2>Make a reservation</h2>
+        <div id="error-box">
+            <p>Please enter your first and last name</p>
+        </div>
         <form id="schedule">
             <input type="date" aria-label="Choose a Date" id="date" name="date" value="" required><br>
             <input aria-label="Choose a time" type="time" id="time" min="10:00" max="23:00" name="time" value="20:30" required><br>
@@ -62,7 +65,7 @@
             <input aria-label="Enter your email" type="text" id="email" placeholder="Email" name="email" required><br>
             <input id="personal-submit" class="submit-butt" type="submit" value="Submit">
         </form>
-        <h5 id="success-message">You Have Successfully Made a Reservation!</h5>
+        <h5 id="success-message">You Have Successfully Made a Reservation for </h5>
     </section>
     
     <section aria-label="learn more about Aba's group dining and wine dinner">
